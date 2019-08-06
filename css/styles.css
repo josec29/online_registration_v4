@@ -1,0 +1,258 @@
+/* ==========================
+General Styles
+===========================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*==== Font styles ===*/
+
+h1, h2, p, footer {
+  text-align: center;
+}
+
+h1, h2, legend {
+  font-weight: bold;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+h2, legend {
+  font-size: 1.1rem;
+  color: #2d3945;
+}
+
+p, label, #newsletter_label, footer {
+  font-size: 0.9rem;
+}
+
+p, footer {
+  color: #b5b5b5;
+}
+
+label, option {
+  color: #495d70;
+}
+
+::placeholder {
+  color: #808080;
+  font-style: italic;
+  text-align: right;
+}
+
+footer {
+  font-style: italic;
+  margin: 2rem 0 3rem 0;
+}
+
+
+/* ==========================
+Layout styles
+===========================*/
+
+.wrapper {
+  margin: 0 15px;
+}
+
+main {
+  margin-top: 1.5rem;
+}
+
+main .wrapper section {
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin: 0;
+  width: 100%;
+}
+
+hr.bold {
+  border: 2px solid #000;
+  margin-bottom: 0.2rem;
+}
+
+hr.light {
+  border: 1px solid #000;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  width: 100%;
+  background-color: #2d3945;
+}
+
+legend {
+  padding: 1rem 0;
+  float: left;
+  width: 100%;
+}
+
+label {
+  margin: 0.5rem 0;
+  display: block;
+}
+
+fieldset {
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+/*==== Contact information styles ===*/
+
+.contact-info_content {
+  margin-bottom: 2rem;
+  background-color: #f7f7f7;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  background-color: #e6e6e6;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 3px;
+  color: #606060;
+}
+
+input[type="text"]:focus, input[type="text"]:hover,
+input[type="email"]:focus, input[type="email"]:hover,
+input[type="tel"]:focus, input[type="tel"]:hover,
+textarea:focus, textarea:hover,
+select:focus, select:hover,
+button:hover {
+  opacity: 0.7;
+  background-color: #ddeeff;
+  transition: opacity 0.5s, border 0.5s, background-color 0.5s;
+}
+
+#zip {
+  width: 50%;
+}
+
+
+/*==== Newsletter styles ===*/
+
+#newsletters_title {
+  padding-bottom: 0.5rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.ch-rd_label {
+  display: inline-block;
+}
+
+.newsletter_content label:nth-of-type(5),
+.newsletter_content label:nth-of-type(8) {
+  margin-top: 2rem;
+}
+
+/*==== Button styles ===*/
+
+button {
+  width: 100%;
+  color: #fff;
+  background-color: #4ebbb5;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border: none;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4ebbb5;
+}
+
+/* ==========================
+Pseudo Classes
+===========================*/
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid #5ad5ff;
+}
+
+/* ==========================
+Media Queries
+===========================*/
+
+@media screen and (min-width: 768px) {
+
+/*==== Font styles ===*/
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+
+/*==== Layout styles ===*/
+
+  main .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  main {
+    margin-top: 2.7rem;
+  }
+
+  hr.light {
+    border:none;
+    border-top: 1px solid #000;
+  }
+
+  /*==============================*/
+
+  .contact-info_content {
+    font-size: 0;
+  }
+
+  .contact-info_content label {
+    display: inline-block;
+    width: 25%
+  }
+
+  .contact-info_content input,
+  .contact-info_content select {
+    width: 75%;
+  }
+
+  #zip {
+    width: 25%;
+  }
+
+/*==============================*/
+
+}

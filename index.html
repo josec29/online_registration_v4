@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3: An Online Registration Form</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <div class="wrapper">
+        <h1>The code review</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <section>
+          <h2>Sign up for our newsletter</h2>
+          <p>Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+        <hr class="bold">
+        <hr class="light">
+        <form action="index.html" method="post">
+          <fieldset class="contact-info_content">
+            <legend>Contact Information</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user_email" placeholder="Required" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user_phone" placeholder="Type your phone number">
+
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address" placeholder="Type your current address">
+
+            <label for="state">State</label>
+            <select id="state" name="user_state">
+              <option disabled selected>Choose your option</option>
+              <option value="state_1">State 1</option>
+              <option value="state_2">State 2</option>
+              <option value="state_3">State 3</option>
+              <option value="state_4">State 4</option>
+              <option value="state_5">State 5</option>
+              <option value="state_6">State 6</option>
+              <option value="state_7">State 7</option>
+            </select>
+
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="user_zipcode">
+          </fieldset>
+
+          <hr class="light">
+
+          <fieldset class="newsletter_content">
+            <legend>Newsletter</legend>
+            <label id="newsletter_label">Select the newsletters you would like to recieve</label>
+            <input type="checkbox" id="html_news" name="pref_news" value="html_news_preference"><label for="html_news" class="ch-rd_label">HTML News</label><br>
+            <input type="checkbox" id="css_news" name="pref_news" value="css_news_preference"><label for="css_news" class="ch-rd_label">CSS News</label><br>
+            <input type="checkbox" id="javascript_news" name="pref_news" value="javascript_news_preference"><label for="javascript_news" class="ch-rd_label">Javascript News</label>
+
+            <label>Newsletter format</label>
+            <input type="radio" id="html_format" name="news_format" value="html_format_preference"><label for="html_format" class="ch-rd_label">HTML</label><br>
+            <input type="radio" id="text_format" name="news_format" value="text_format_preference"><label for="text_format" class="ch-rd_label">Plain text</label>
+
+            <label for="topics_comment">Other topics you'd like to hear about</label>
+            <textarea id="topics_comment" name="user_topics"  cols="30" rows="5"></textarea>
+
+            <button type="submit" name="sign-up_button">Sign Up</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer>Copyright The Code Review</footer>
+
+  </body>
+</html>
